@@ -3,7 +3,7 @@ import { HomeComponent } from 'src/app/pages/landing/home/home.component';
 
 export const LandingLayoutRoutes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   }
 ];
