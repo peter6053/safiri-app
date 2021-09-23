@@ -1,0 +1,16 @@
+{
+    "register":[
+        {
+            "firstname":"firstname",
+            "lastname":"lastname",
+            "email":"email",
+            "Email":"email",
+            "password":  "password",
+            "phone":  "password"
+
+            
+        }
+
+    ]
+    
+}
