@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,7 +8,7 @@ export class HeaderComponent implements OnInit {
 
   collapsed = true;
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
   }
@@ -17,5 +16,4 @@ export class HeaderComponent implements OnInit {
   toggleCollapsed(): void {
     this.collapsed = !this.collapsed;
   }
-
 }

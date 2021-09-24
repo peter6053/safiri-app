@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend';
+
+  constructor(
+    @Inject(DOCUMENT) private document: Document
+  ) {}
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (document.body.scrollTop > 10 ||
+    document.documentElement.scrollTop > 10) {
+      document.getElementById('nav').classList.add('active');
+      document.getElementById('nav').classList.remove('active');
+    }
+  }
+  name = 'Angular';
 }
