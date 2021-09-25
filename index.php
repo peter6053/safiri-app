@@ -7,9 +7,8 @@ foreach($json ('email')as $register)
     $output .= "<h4>" $register('lastname'). "</h4>"
     $output .= "<h4>" $register('password'). "</h4>"
     $output .= "<h4>" $register('verifypassword'). "</h4>"
-    $output .= "<h4>" $email('Phone'). "</h4>"
- 
- $output .="</ul>";
+    $output .= "<h4>" $register('Phone'). "</h4>"
+    $output .="</ul>";
  echo$output;
  ?>
 
@@ -25,6 +24,7 @@ foreach($json ('login')as $login)
     $output .= "<h4>" $email('lastname'). "</h4>"
 
 $output .="</ul>";
+echo$output;
 ?>
 
 
